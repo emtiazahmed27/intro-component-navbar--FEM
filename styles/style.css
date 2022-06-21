@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Outfit:wght@300;400;600&family=Play:wght@400;700&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.margin-l-r {
+  margin: 0rem 1rem;
+}
+
+.margin-t-r {
+  margin: 10px 0px;
+}
+
+.none {
+  display: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Epilogue", sans-serif;
+}
+body main {
+  width: 80%;
+  height: 100vh;
+  margin-inline: auto;
+}
+body main nav {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin-top: 1rem;
+  margin-inline: auto;
+}
+body main nav .logo-section {
+  margin: 10px 0 0;
+}
+body main nav .hamburger {
+  display: none;
+}
+body main nav .nav-items {
+  margin-left: 2rem;
+  display: inline-flex;
+}
+body main nav .nav-items .navbtn {
+  border: none;
+  background-color: white;
+}
+body main nav .register-sec {
+  margin-left: auto;
+  display: inline-flex;
+  color: hsl(0deg, 0%, 41%);
+}
+body main nav .register-sec .login {
+  margin-right: 1rem;
+  border: none;
+  background-color: white;
+}
+body main nav .register-sec .sign {
+  border: 2px solid black;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  transition: all 0.6s ease-in-out;
+}
+body main nav .register-sec .sign:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+body .container {
+  display: flex;
+  margin-top: 5rem;
+  width: 85%;
+  margin-inline: auto;
+}
+body .container .left-col {
+  width: 100%;
+}
+body .container .left-col h1 {
+  font-size: 60px;
+  margin-top: 5rem;
+}
+body .container .left-col p {
+  margin-top: 3rem;
+  font-size: 18px;
+  color: hsl(0deg, 0%, 41%);
+}
+body .container .left-col .learn-btn {
+  width: 30%;
+  margin-top: 3rem;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid black;
+  padding: 0.5rem 0.7rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: all 0.6s ease-in-out;
+}
+body .container .left-col .learn-btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}
+body .container .left-col .left-col-footer-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9rem;
+}
+body .container .rigth-col {
+  width: 100%;
+}
+body .container .rigth-col img {
+  width: 80%;
+  padding: 10% 10%;
+}
+body .drpdwn-feature {
+  position: absolute;
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  padding: 0.5rem 1.3rem;
+  border-radius: 0.3rem;
+  box-shadow: 3px 3px 15px rgb(212, 211, 211);
+}
+body .drpdwn-feature .row-1 {
+  display: flex;
+  margin: 10px 0px;
+}
+body .drpdwn-feature .row-1 p {
+  padding: 0px 0px 0px 10px;
+}
+body .drpdwn-company {
+  position: absolute;
+  top: 40px;
+  left: 197px;
+  border-radius: 0.3rem;
+  padding: 1rem 1rem;
+  box-shadow: 3px 3px 15px rgb(212, 211, 211);
+}
+body .modal-container {
+  display: none;
+}
+
+.elementToFadeIn {
+  -webkit-animation: fadein 0.4s linear 1 forwards;
+          animation: fadein 0.4s linear 1 forwards;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.elementToFadeout {
+  -webkit-animation: fadeout 0.4s linear 1 forwards;
+          animation: fadeout 0.4s linear 1 forwards;
+}
+
+@-webkit-keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 426px) {
+  body {
+    position: relative;
+  }
+  body main {
+    width: 90%;
+    height: auto;
+  }
+  body main nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  body main nav .hamburger {
+    display: block;
+    padding: 10px 0px 0px;
+  }
+  body main nav .nav-items {
+    display: none;
+  }
+  body main nav .register-sec {
+    display: none;
+  }
+  body .container {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin-inline: auto;
+  }
+  body .container .left-col {
+    width: 100%;
+    text-align: center;
+  }
+  body .container .left-col h1 {
+    font-size: 30px;
+    margin-top: 2rem;
+  }
+  body .container .left-col p {
+    margin-top: 1rem;
+  }
+  body .container .left-col .learn-btn {
+    width: 50%;
+    margin-inline: auto;
+    margin-top: 2rem;
+  }
+  body .container .left-col .left-col-footer-section {
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+  body .container .left-col .left-col-footer-section .img-cont .f-img {
+    width: 70%;
+  }
+  body .container .rigth-col {
+    margin: 1rem 0 0;
+  }
+  body .container .rigth-col .img {
+    width: 100;
+    padding: 0;
+  }
+
+  .modal-window {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0%;
+    left: 0;
+  }
+  .modal-window .modal-container {
+    padding: 1rem;
+    display: block;
+    width: 60%;
+    background-color: white;
+  }
+  .modal-window .modal-container .close-btn {
+    display: flex;
+    justify-content: end;
+  }
+  .modal-window .modal-container .nav-items .drpdwn-feature {
+    display: block;
+    position: relative;
+    top: 0;
+  }
+  .modal-window .modal-container .navbtn {
+    display: block;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    background-color: white;
+  }
+  .modal-window .modal-container .register-sec {
+    width: 100%;
+    margin-left: 1rem;
+  }
+  .modal-window .modal-container .register-sec .login {
+    width: 90%;
+    display: block;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    background-color: white;
+  }
+  .modal-window .modal-container .register-sec .sign {
+    text-align: center;
+    width: 90%;
+    display: block;
+    padding: 0.5rem 0.7rem;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 0.3rem;
+  }
+}/*# sourceMappingURL=style.css.map */

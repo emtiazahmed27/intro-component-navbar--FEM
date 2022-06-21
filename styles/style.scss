@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Outfit:wght@300;400;600&family=Play:wght@400;700&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+//utility class
+.margin-l-r {
+  margin: 0rem 1rem;
+}
+
+.margin-t-r {
+  margin: 10px 0px;
+}
+
+.none {
+  display: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Epilogue", sans-serif;
+  main {
+    width: 80%;
+    height: 100vh;
+    margin-inline: auto;
+    nav {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      width: 95%;
+      margin-top: 1rem;
+      margin-inline: auto;
+      .logo-section {
+        margin: 10px 0 0;
+      }
+      .hamburger {
+        display: none;
+      }
+      //ham=>display none
+      .nav-items {
+        margin-left: 2rem;
+        display: inline-flex;
+        .navbtn {
+          border: none;
+          background-color: white;
+        }
+      }
+      .register-sec {
+        margin-left: auto;
+        display: inline-flex;
+        color: hsl(0, 0%, 41%);
+        .login {
+          margin-right: 1rem;
+          border: none;
+          background-color: white;
+        }
+        .sign {
+          border: 2px solid black;
+          padding: 0.5rem 1.2rem;
+          border-radius: 0.5rem;
+          background-color: white;
+          transition: all 0.6s ease-in-out;
+        }
+        .sign:hover {
+          cursor: pointer;
+          background-color: black;
+          color: white;
+        }
+        //ham=> display none
+      }
+    }
+  }
+  .container {
+    display: flex;
+    margin-top: 5rem;
+    width: 85%;
+    margin-inline: auto;
+    .left-col {
+      width: 100%;
+      h1 {
+        font-size: 60px;
+        margin-top: 5rem;
+      }
+      p {
+        margin-top: 3rem;
+        font-size: 18px;
+        color: hsl(0, 0%, 41%);
+      }
+      .learn-btn {
+        width: 30%;
+        margin-top: 3rem;
+        font-size: 18px;
+        font-weight: 700;
+        border: 2px solid black;
+        padding: 0.5rem 0.7rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        transition: all 0.6s ease-in-out;
+      }
+      .learn-btn:hover {
+        cursor: pointer;
+        color: white;
+        background-color: black;
+      }
+      .left-col-footer-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 9rem;
+      }
+    }
+    .rigth-col {
+      width: 100%;
+      img {
+        width: 80%;
+        padding: 10% 10%;
+      }
+    }
+  }
+  .drpdwn-feature {
+    position: absolute;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    padding: 0.5rem 1.3rem;
+    border-radius: 0.3rem;
+    box-shadow: 3px 3px 15px rgb(212, 211, 211);
+    .row-1 {
+      display: flex;
+      margin: 10px 0px;
+      p {
+        padding: 0px 0px 0px 10px;
+      }
+    }
+  }
+  .drpdwn-company {
+    position: absolute;
+    top: 40px;
+    left: 197px;
+    border-radius: 0.3rem;
+    padding: 1rem 1rem;
+    box-shadow: 3px 3px 15px rgb(212, 211, 211);
+  }
+  .modal-container {
+    display: none;
+  }
+}
+
+//transition
+.elementToFadeIn {
+  animation: fadein 0.4s linear 1 forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.elementToFadeout {
+  animation: fadeout 0.4s linear 1 forwards;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+//mobile view
+@media screen and (max-width: 426px) {
+  body {
+    position: relative;
+    main {
+      width: 90%;
+      height: auto;
+      nav {
+        display: flex;
+        justify-content: space-between;
+        .hamburger {
+          display: block;
+          padding: 10px 0px 0px;
+        }
+        .nav-items {
+          display: none;
+        }
+        .register-sec {
+          display: none;
+        }
+      }
+    }
+    .container {
+      display: flex;
+      margin-top: 2rem;
+      flex-direction: column-reverse;
+      width: 90%;
+      margin-inline: auto;
+      .left-col {
+        width: 100%;
+        text-align: center;
+        h1 {
+          font-size: 30px;
+          margin-top: 2rem;
+        }
+        p {
+          margin-top: 1rem;
+        }
+        .learn-btn {
+          width: 50%;
+          margin-inline: auto;
+          margin-top: 2rem;
+        }
+        .left-col-footer-section {
+          justify-content: space-between;
+          margin: 2rem 0;
+          .img-cont {
+            .f-img {
+              width: 70%;
+            }
+          }
+        }
+      }
+      .rigth-col {
+        margin: 1rem 0 0;
+        .img {
+          width: 100;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .modal-window {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0%;
+    left: 0;
+    .modal-container {
+      padding: 1rem;
+      display: block;
+      width: 60%;
+      background-color: white;
+      .close-btn {
+        display: flex;
+        justify-content: end;
+      }
+      .nav-items {
+        .drpdwn-feature {
+          display: block;
+          position: relative;
+          top: 0;
+        }
+      }
+      .navbtn {
+        display: block;
+        padding: 0.5rem 0.7rem;
+        border: none;
+        background-color: white;
+      }
+      .register-sec {
+        width: 100%;
+        margin-left: 1rem;
+        .login {
+          width: 90%;
+          display: block;
+          padding: 0.5rem 0.7rem;
+          border: none;
+          background-color: white;
+        }
+        .sign {
+          text-align: center;
+          width: 90%;
+          display: block;
+          padding: 0.5rem 0.7rem;
+          border: 2px solid black;
+          background-color: white;
+          border-radius: 0.3rem;
+        }
+      }
+    }
+  }
+}

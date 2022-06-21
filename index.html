@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./script.js" defer></script>
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="elementToFadeIn">
+    <main>
+      <nav>
+        <div class="logo-section">
+          <img src="./images/logo.svg" alt="" class="logo" />
+        </div>
+        <div class="hamburger">
+          <img src="./images/icon-menu.svg" alt="" class="ham" />
+        </div>
+        <div class="nav-items">
+          <button class="navbtn feature">
+            Features
+            <img src="./images/icon-arrow-down.svg" alt="" class="arrow-dwn" />
+            <img
+              src="./images/icon-arrow-up.svg"
+              alt=""
+              class="arrow-up none"
+            />
+          </button>
+          <button class="navbtn company margin-l-r">
+            Company
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt=""
+              class="arrow-dwn-2"
+            />
+            <img
+              src="./images/icon-arrow-up.svg"
+              alt=""
+              class="arrow-up-2 none"
+            />
+          </button>
+          <button class="navbtn feature margin-l-r">Careers</button>
+          <button class="navbtn feature margin-l-r">About</button>
+        </div>
+        <div class="register-sec">
+          <button class="login">Log In</button>
+          <button class="sign">Register</button>
+        </div>
+        <div class="drpdwn-feature none">
+          <div class="row-1">
+            <div class="todo-img">
+              <img src="./images/icon-todo.svg" alt="" />
+            </div>
+            <p>To-do List</p>
+          </div>
+          <div class="row-1">
+            <div class="todo-img">
+              <img src="./images/icon-calendar.svg" alt="" />
+            </div>
+            <p>Calender</p>
+          </div>
+          <div class="row-1">
+            <div class="todo-img">
+              <img src="./images/icon-planning.svg" alt="" />
+            </div>
+            <p>Plannings</p>
+          </div>
+          <div class="row-1">
+            <div class="todo-img">
+              <img src="./images/icon-reminders.svg" alt="" />
+            </div>
+            <p>Remainders</p>
+          </div>
+        </div>
+        <div class="drpdwn-company none">
+          <p class="margin-t-r">History</p>
+          <p class="margin-t-r">Our Team</p>
+          <p class="margin-t-r">Blog</p>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="left-col">
+          <h1>
+            Make <br />
+            remote work
+          </h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar
+          </p>
+          <div class="learn-btn">Learn More</div>
+          <div class="left-col-footer-section">
+            <div class="img-cont">
+              <img src="./images/client-databiz.svg" class="f-img" alt="" />
+            </div>
+            <div class="img-cont">
+              <img src="./images/client-audiophile.svg" class="f-img" alt="" />
+            </div>
+            <div class="img-cont">
+              <img src="./images/client-meet.svg" class="f-img" alt="" />
+            </div>
+            <div class="img-cont">
+              <img src="./images/client-maker.svg" class="f-img" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="rigth-col">
+          <img src="./images/image-hero-desktop.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <!-- Features Company Careers About Login Register Make remote work . Learn more -->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Emtiaz Ahmed</a>.
+      </div>
+    </footer>
+    <!-- modal-container -->
+    <div class="modal-window none">
+      <div class="modal-container">
+        <div class="close-btn">
+          <img src="./images/icon-close-menu.svg" alt="" />
+        </div>
+        <div class="nav-items">
+          <button class="navbtn feature margin-l-r">
+            Features
+            <img src="./images/icon-arrow-down.svg" alt="" class="arrow-dwn" />
+            <img
+              src="./images/icon-arrow-up.svg"
+              alt=""
+              class="arrow-up none"
+            />
+          </button>
+          <button class="navbtn company margin-l-r">
+            Company
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt=""
+              class="arrow-dwn-2"
+            />
+            <img
+              src="./images/icon-arrow-up.svg"
+              alt=""
+              class="arrow-up-2 none"
+            />
+          </button>
+          <button class="navbtn feature margin-l-r">Careers</button>
+          <button class="navbtn feature margin-l-r">About</button>
+        </div>
+        <div class="register-sec">
+          <button class="login">Log In</button>
+          <button class="sign">Register</button>
+        </div>
+        <div class="drpdwn-feature none">
+          <div class="row-1">
+            <div class="todo-img">
+              <img src="./images/icon-todo.svg" alt="" />
+            </div>
+            <p>To-do List</p>
+          </div>
+          <div class="row-1">
+            <div class="todo-img">
+              <img src="./images/icon-calendar.svg" alt="" />
+            </div>
+            <p>Calender</p>
+          </div>
+          <div class="row-1">
+            <div class="todo-img">
+              <img src="./images/icon-planning.svg" alt="" />
+            </div>
+            <p>Plannings</p>
+          </div>
+          <div class="row-1">
+            <div class="todo-img">
+              <img src="./images/icon-reminders.svg" alt="" />
+            </div>
+            <p>Remainders</p>
+          </div>
+        </div>
+        <div class="drpdwn-company none">
+          <p class="margin-t-r">History</p>
+          <p class="margin-t-r">Our Team</p>
+          <p class="margin-t-r">Blog</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
