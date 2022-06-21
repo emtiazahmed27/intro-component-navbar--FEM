@@ -46,6 +46,8 @@ body {
         .navbtn {
           border: none;
           background-color: white;
+          font-weight: 500;
+          color: hsl(0, 0%, 41%);
         }
       }
       .register-sec {
@@ -56,6 +58,8 @@ body {
           margin-right: 1rem;
           border: none;
           background-color: white;
+          font-weight: 500;
+          color: hsl(0, 0%, 41%);
         }
         .sign {
           border: 2px solid black;
@@ -63,6 +67,8 @@ body {
           border-radius: 0.5rem;
           background-color: white;
           transition: all 0.6s ease-in-out;
+          font-weight: 500;
+          color: hsl(0, 0%, 41%);
         }
         .sign:hover {
           cursor: pointer;

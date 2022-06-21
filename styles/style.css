@@ -47,6 +47,8 @@ body main nav .nav-items {
 body main nav .nav-items .navbtn {
   border: none;
   background-color: white;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 41%);
 }
 body main nav .register-sec {
   margin-left: auto;
@@ -57,6 +59,8 @@ body main nav .register-sec .login {
   margin-right: 1rem;
   border: none;
   background-color: white;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 41%);
 }
 body main nav .register-sec .sign {
   border: 2px solid black;
@@ -64,6 +68,8 @@ body main nav .register-sec .sign {
   border-radius: 0.5rem;
   background-color: white;
   transition: all 0.6s ease-in-out;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 41%);
 }
 body main nav .register-sec .sign:hover {
   cursor: pointer;
